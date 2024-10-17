@@ -1,0 +1,821 @@
+/* Style for the logo */
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust top spacing */
+    left: 20px; /* Adjust left spacing */
+    width: 100px; /* Adjust size of the logo */ 
+    z-index: 100; /* Ensure it's on top of other elements */
+    margin: 20px;
+    transform: translate(-100px, -100px);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+body {
+    font-family: General Sans Variable, sans-serif;
+    height: 200vh; /* To allow scrolling on the page */
+    margin: 0px;
+}
+/* Navigation Bar Styles */
+.nav-bar {
+    background-color: transparent; /* Set background color as needed */
+ 
+    padding: 10px; /* Add some padding for better looks */
+    transform: translate(-150px, -60px);
+}
+
+.nav-bar ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make the list items inline */
+    justify-content: flex-end; /* Align the items to the right */
+}
+
+.nav-bar li {
+    margin-right: 20px; /* Add some space between items */
+}
+
+.nav-bar a {
+    text-decoration: none; /* Remove underline by default */
+    color: #fff; /* White text color; change as needed */
+    transition: text-decoration 0.2s; /* Add a smooth transition effect */
+}
+
+.nav-bar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.contact-button {
+    display: inline-block; /* Ensure the button is inline with other items */
+    height: 50px; /* Set button height */
+    width: 135px; /* Set button width */
+    background-color: #FFC300; /* Button color */
+    color: #333; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 32px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(51, 51, 51, 0.3); /* Shadow */
+    text-align: center; /* Center text */
+    line-height: 50px; /* Vertically center text */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.1s ease; /* Smooth transition for hover effect */
+    margin-left: 1200px; /* Space between nav items and button */
+
+    /* Move the button up by 30px (adjust as needed) */
+    transform: translateY(-100px); /* Moves the button 30px up */
+}
+
+.contact-button:hover {
+    transform: translateY(2px); /* Simulate a pressed effect on hover */
+}
+.sun-image {
+    position: absolute; /* Position it absolutely */
+    top: 20px; /* Adjust the distance from the top as needed */
+    right: 200px; /* Align to the right */
+    width: 150px; /* Increase the width to make it bigger */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+.sun-image:hover {
+    animation: wiggle 0.5s ease-in-out infinite; /* Add wiggle effect on hover */
+    transform: rotate(0deg); /* Prevent any positional change on hover */
+}
+
+/* Define the wiggle keyframes */
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+.hero {
+    width: 100%;
+    min-height: 800px; /* Minimum height of 903px */
+    background-color: #2A52BE; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding for smaller screens */
+}
+
+.hero-content {
+    color: #ffffff;
+    position: relative;
+}
+
+
+
+.hero h1 {
+    font-size: 250px; /* Default large font size */
+    margin: 0px 0px;
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Fade effect with transform */
+    
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 220px; /* Smaller font for medium screens */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 150px; /* Smaller font for tablets */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 100px; /* Smaller font for mobile screens */
+    }
+
+    .hero p {
+        font-size: 0.8rem; /* Even smaller paragraph text */
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Gambetta:ital,wght@1,600&display=swap'); /* Importing Gambetta font */
+
+.special-font {
+    font-family: 'Gambetta', serif;
+    font-weight: 600; /* Semibold */
+    font-style: italic; /* Italic */
+}
+.hero h2 {
+    font-size: 40px;
+}
+
+/* Style for the flower image */
+.flower-image {
+    position: absolute;
+    top: 450px;
+    left: 30px; /* Adjust left spacing */
+    width: 182px;  /* Adjust size of the flower image */
+    height: 150px; /* Adjust height of the flower image */
+    z-index: 100;  /* Ensure it stays on top of other elements */
+    margin-right: 20px; /* Add 20px margin to the right */
+    margin: 30px;
+}
+
+/* Wiggle effect on hover */
+.flower-image:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+/* Define the wiggle keyframes */
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+}
+/* Content Below the Hero Section */
+.content-below-header {
+    background-color: #EFF0F2; /* Set background color for the section */
+    width: 100%;
+    min-height: 600px; /* Adjust height as needed */
+    padding: 20px; /* Add padding for spacing */
+}
+/* Right image - positioned with a margin of 20px */
+.right-image {
+    position: absolute;
+    top: 550px;
+    right: 30px; /* Adjust left spacing */
+    width: 182px;  /* Adjust size of the flower image */
+    height: 150px; /* Adjust height of the flower image */
+    z-index: 100;  /* Ensure it stays on top of other elements */
+    margin-right: 20px; /* Add 20px margin to the right */
+    margin: 30px;
+}
+
+/* Wiggle effect on hover */
+.right-image:hover {
+    animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+
+}
+/* Style for the container holding both words */
+.featured-works-container {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 100px;  /* Adjust margin for vertical centering */
+    color: #333333; /* Set text color */
+}
+
+/* Style for the word "Featured" */
+.featured {
+    font-family: 'General Sans Variable', sans-serif; /* Use General Sans Variable font */
+    font-weight: 500; /* Medium weight */
+    font-size: 96px; /* Font size */
+    display: inline-block; /* Ensure both words are in the same line */
+}
+
+/* Style for the word "Works" */
+.works {
+    font-family: 'Gambetta', serif; /* Use Gambetta font */
+    font-style: italic; /* Italic style */
+    font-weight: 600; /* Semi-bold */
+    font-size: 96px; /* Font size */
+    display: inline-block; /* Ensure both words are in the same line */
+}
+/* Adjust spacing for "Discover my work ✦" */
+.discover-work {
+    font-family: 'General Sans Variable', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 60px; /* Adjusted to 60px below Featured Works */
+    margin-bottom: 28px; /* Set the bottom margin to 28px */
+}
+
+
+/* Existing CSS for the Content Below the Hero Section */
+.content-below-header {
+    background-color: #EFF0F2; /* Set background color for the section */
+    width: 100%;
+    min-height: 100vh; /* Make it 100% of the viewport height */
+    padding: 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Text content style */
+.Para {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center the text within the span */
+    min-height: 600px; /* Adjust height as needed */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 0; /* Ensure there's no additional margin above */
+}
+
+.Para span {
+    max-width: 500px; /* Limit width for better line breaks */
+    line-height: 1.5; /* Adjust line height for readability */
+    transform: translateY(-300px); /* Moves the text up by 28px */
+}
+
+.content-below-header {
+    background-color: #EFF0F2; /* Set background color for the section */
+    width: 100%;
+    min-height: 100vh; /* Make it 100% of the viewport height */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Flexbox container for images */
+.image-grid {
+    display: flex;
+    flex-direction: column; /* Stack images in rows */
+    justify-content: space-between;
+    align-items: center; /* Center the content */
+    gap: 40px; /* Space between rows */
+    max-width: 1200px; /* Maximum width */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* First row (Classcentral and Dishdash) */
+.first-row {
+    display: flex;
+    justify-content: space-between; /* Space between the two images */
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+}
+
+/* Second row (Analogy and Izmenyat) */
+.second-row {
+    display: flex;
+    justify-content: space-between; /* Space between the two images */
+    align-items: center; /* Vertically center the content */
+    width: 100%;
+}
+
+/* Classcentral Styles */
+.classcentral {
+    width: 48%; /* Take 48% of the space to leave room for Dishdash */
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.classcentral img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio without cutting the image */
+}
+
+/* Dishdash Styles */
+.dishdash {
+    width: 48%; /* Take 48% of the space to leave room for Classcentral */
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.dishdash img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Analogy Styles */
+.analogy {
+    width: 48%; /* Take 48% of the space to leave room for Izmenyat */
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.analogy img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Izmenyat Styles */
+.izmenyat {
+    width: 48%; /* Take 48% of the space to leave room for Analogy */
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.izmenyat img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Hover effect for individual images */
+.classcentral:hover {
+    transform: scale(1.05); /* Scale Class Central image on hover */
+}
+
+.dishdash:hover {
+    transform: scale(1.05); /* Scale Dishdash image on hover */
+}
+
+.analogy:hover {
+    transform: scale(1.05); /* Scale Analogy image on hover */
+}
+
+.izmenyat:hover {
+    transform: scale(1.05); /* Scale Izmenyat image on hover */
+}
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    transform: translateY(-400px); /* Move all images up by 300px */
+}
+.rectangle {
+    width: 100%;
+    height: 1260px;
+    background-color: #333333; /* Adjust the background color */
+    position: relative;
+    overflow-y: scroll; /* Makes the rectangle scrollable */
+    transform: translateY(-300px); /* Move all images up by 300px */
+  }
+  
+  .get-to-know-me {
+    position: absolute;
+    top: 100px; /* Adjust this value to move the text further down */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 96px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .get-to {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 500; /* Medium */
+  }
+  
+  .know-me {
+    font-family: 'Gambetta', serif;
+    font-weight: 600; /* Semibold */
+    font-style: italic;
+  }
+  /* New text styles */
+.guess-text {
+    position: absolute;
+    top: calc(150px + 96px + 20px); /* 150px from the top + 96px (Get to know me size) + 20px gap */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .paintings {
+    position: absolute;
+    top: calc(150px + 96px + 20px + 40px + 20px); /* Position below the guess-text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .painting {
+    margin: 0 10px;
+    border: 5px solid transparent;
+    transition: border 0.3s ease;
+    cursor: pointer;
+    border-radius: 36px; /* Add border curvature */
+  }
+  
+  .painting:hover {
+    opacity: 0.8;
+  }
+  
+  /* Custom sizes for the images */
+  #painting1 {
+    width: 500px;
+    height: 300px;
+  }
+  
+  #painting2 {
+    width: 390px;
+    height: 300px;
+  }
+  
+  #painting3 {
+    width: 500px;
+    height: 455px;
+  }
+  
+  #mypainting {
+    width: 390px;
+    height: 455px;
+  }
+  
+  /* Active state for borders */
+  .active {
+    border: 5px solid green;
+  }
+  
+  .inactive {
+    border: 5px solid red;
+  }
+  .more-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; /* Aligns the text based on the baseline */
+    margin-top: 20px; /* Adjust margin to control spacing from the rectangle */
+    transform: translateY(-200px); /* Move all images up by 300px */
+  }
+  
+  .more {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 500; /* Medium weight */
+    font-size: 96px;
+    color: #333333;
+    line-height: 1; /* Ensures the height of the text doesn't cause misalignment */
+  }
+  
+  .about-me {
+    font-family: 'Gambetta', serif;
+    font-weight: 600; /* Semibold */
+    font-style: italic;
+    font-size: 96px;
+    color: #333333;
+    margin-left: 10px; /* Adjust space between "More" and "About Me" */
+    line-height: 1; /* Ensure both texts have the same line height */
+    vertical-align: bottom; /* Aligns "About Me" with "More" */
+  }
+  .intro-text {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 400; /* Regular weight */
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    line-height: 1.2; /* Adjust the line height for better spacing */
+    margin: 0 auto;
+    width: 80%; /* Adjust the width of the text block for better readability */
+    transform: translateY(-150px); /* Move all images up by 300px */
+  }
+  
+  .intro-text p {
+    margin: 0; /* Removes default paragraph margins */
+    padding: 5px 0; /* Adds some space between the lines */
+  }
+  .about-me-text {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 400; /* Regular weight */
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    line-height: 1.5; /* Adjusts line spacing */
+    margin: 0 auto; /* Centers the text container */
+    max-width: 800px; /* Controls the width of the text block */
+    margin-top: 40px; /* Adjusts spacing from the element above */
+    transform: translateY(-150px); /* Move all images up by 300px */
+  }
+  .me {
+    display: flex;
+    justify-content: flex-start; /* Aligns the image to the left */
+    padding-left: 80px; /* Adds padding/margin on the left */
+    margin-top: 80px; /* Adds margin at the top */
+    left: 80px; /* Moves the image to the left by 80px */
+    transform: translateX(400px); /* Moves the element 50px to the left */
+
+  }
+  
+  .me img {
+    height: 622px;
+    width: 610px;
+  }
+  .table-container {
+    width: 612px; /* Fixed width for the table */
+    transform: translate(-400px, -500px); /* Move the table left and up */
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    color: #666666;
+    text-align: left;
+    padding: 15px 0;
+}
+
+td {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 22px;
+    color: #333333;
+    padding: 15px 0;
+}
+
+.sub-text {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 12px;
+    color: #666666;
+}
+
+tr {
+    border-bottom: 2px solid #D3D3D3;
+}
+
+td span {
+    display: block;
+    margin-top: 5px; /* Adds a small space between the role and the sub-text */
+}
+
+.blue-rectangle {
+    background-color: #2A52BE;
+    height: 445px;
+    width: 100%;
+    transform: translateY(-150px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styling the scrolling text */
+.scrolling-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    font-size: 122px;
+    color: white;
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: scrollText 30s linear infinite; /* Increased speed from 60s to 30s */
+}
+
+/* Individual elements within the scrolling text */
+.star {
+    color: #FFC300; /* Color for the stars */
+    font-size: 122px;
+    padding: 0 20px; /* Space around stars */
+}
+
+.let {
+    font-family: 'General Sans Variable', sans-serif;
+    font-weight: bold;
+    color: white;
+    display: inline-block; /* Ensure it's on the same line */
+    margin-right: 10px; /* Add some space between "Let's" and "Collaborate" */
+}
+
+.collaborate {
+    font-family: 'Gambetta', serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    display: inline-block; /* Ensure it's on the same line */
+}
+
+/* Space between "Let's" and "Collaborate" */
+.space {
+    width: 20px; /* Adjust this width to control the gap between "Let's" and "Collaborate" */
+    display: inline-block;
+}
+/* Adding the horizontal white line */
+.horizontal-line {
+    background-color: white;
+    height: 2px; /* Adjust thickness */
+    width: 100%; /* Adjust width, can be full or partial */
+    margin: 20px auto 0; /* Add spacing and center the line */
+}
+
+/* Container for the entire section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    margin-left: auto; /* Moves the container to the right */
+    margin-right: 0; /* Ensures it doesn't shift to the left */
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  /* Styling for the 'Drop me a line' section */
+  .drop-line {
+    flex: 1;
+    padding: 10px;
+    font-family: 'General Sans Variable', sans-serif;
+    font-size: 32px;
+    text-align: left;
+    transform: translateX(600px);
+  }
+  
+  .drop-line a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styling for the 'Links' section */
+  .links {
+    flex: 1;
+    padding: 10px;
+    font-family: 'General Sans Variable', sans-serif;
+    font-size: 16px;
+    
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .links ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styling for the 'Social Media' section */
+  .social-media {
+    flex: 1;
+    padding: 10px;
+    font-family: 'General Sans Variable', sans-serif;
+    font-size: 16px;
+    transform: translateX(-800px);
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    margin-bottom: 10px;
+  }
+  
+  .social-media ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-media ul li img {
+    width: 16px;
+    margin-right: 10px;
+  }
+  .dark-rectangle {
+    height: 100px;
+    width: 100%; /* This will make the rectangle stretch across the full width of the page */
+    background-color: #333333;
+    transform: translateY(-250px); /* Move all images up by 300px */
+    margin-bottom: 0;
+
+  }
+
+  .dark-rectangle {
+    overflow: hidden;
+   
+}
+
+.footer{
+    height: 0px;
+}
+
+  
+  
+
+
+/* Animation to scroll the text from right to left */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start off the screen on the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Fully off the screen on the left */
+    }
+}
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
